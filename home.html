@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Scroll</title>
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" />
+  <!-- styles -->
+  <link rel="stylesheet" href="./styles.css" />
+
+</head>
+
+<body>
+  <!-- header -->
+  <header id="home">
+    <!-- navbar -->
+    <nav id="nav">
+      <div class="nav-center">
+        <!-- nav header -->
+        <div class="nav-header">
+          <a href="index.html"> <img src="./img/Add a heading.png" alt="logo" class="logo"></a>
+          <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+        <!-- links -->
+        <div class="links-container">
+          <ul class="links">
+            <li>
+              <a href="#home" class="scroll-link">Home</a>
+            </li>
+            <li>
+              <a href="#story" class="scroll-link">About Film</a>
+            </li>
+            <li>
+              <a href="#reviews" class="scroll-link">Reviews</a>
+            </li>
+            <li>
+              <a href="#facts" class="scroll-link">Trivia</a>
+            </li>
+            <li>
+              <a href="#carousel" class="scroll-link">Images</a>
+            </li>
+
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- banner *******************************************************************************************-->
+    <div class="banner">
+      <div class="container">
+        <h1>Mulholland DR.</h1>
+        <p>The only survivor to a car accident on Mulholland Drive (the street) is a beautiful, dark haired woman. The
+          car was going through the famous Hollywood Hills. Although she doesn´t die in the accident, she ends up
+          severely injured and in a profound shock. With a lot of struggle, she manages to get to Los Angeles City and
+          break into an apartment. The next scene is based on the life of another character, going by the name of
+          Betty
+          Elms, who is an aspiring actress trying to make it in the big city. She gets to the apartment that belongs
+          to
+          her aunt, Ruth but only finds the survivor with a severe case of amnesia. She assumes to be Rita because of
+          a
+          Rita Hayworth poster on the wall. Her purse contained a lot of money and also a blue key that is really
+          unusual.</p>
+        <a href="#carousel" class="scroll-link btn btn-white">Image gallery</a>
+      </div>
+    </div>
+  </header>
+  <main>
+
+
+    <!-- About Film******************************************************************************************* -->
+    <section id="story" class="section">
+      <div class="title">
+        <h2>About Film</h2>
+        <p>
+          <q>An actress longing to be a star. A woman searching for herself. Both worlds will collide... on Mulholland
+            Drive. </q>
+        </p>
+      </div>
+      <div class="about-center section-center">
+        <article class="about-img">
+          <img src="./img/trio.png" alt="" />
+        </article>
+        <article class="about">
+          <!-- btn container -->
+          <div class="btn-container">
+            <button class="tab-btn active" data-id="history">Plot</button>
+            <button class="tab-btn" data-id="vision">History</button>
+            <button class="tab-btn" data-id="goals">Box office</button>
+          </div>
+          <div class="about-content">
+            <!-- single item -->
+            <div class="content active" id="history">
+              <h4>Plot</h4>
+              <p>
+                The only survivor to a car accident on Mulholland Drive (the street) is a beautiful, dark haired
+                woman. The car was going through the famous Hollywood Hills. Although she doesn´t die in the accident,
+                she ends up severely injured and in a profound shock. With a lot of struggle, she manages to get to
+                Los Angeles City and break into an apartment...
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="vision">
+              <h4>History</h4>
+              <p>
+                Lynch described the attractiveness of the idea of a pilot, despite the knowledge that the medium of
+                television would be constricting: "I'm a sucker for a continuing story ... Theoretically, you can get
+                a very deep story and you can go so deep and open the world so beautifully, but it takes time to do
+                that."The story included surreal elements, much like Lynch's earlier series Twin Peaks. Groundwork was
+                laid for story arcs, such as the mystery of Rita's identity, Betty's career and Adam Kesher's film
+                project.
+              </p>
+            </div>
+            <!-- end of single item -->
+            <!-- single item -->
+            <div class="content" id="goals">
+              <h4>Box office</h4>
+              <p>
+                Universal Pictures released Mulholland Drive theatrically in 66 theaters in the United States on
+                October 12, 2001, grossing <b>$587,591</b> over its opening weekend. It eventually expanded to its
+                widest
+                release of 247 theaters, ultimately grossing <b>$7,220,243</b> at the U.S. box office. TVA Films
+                released
+                the
+                film theatrically in Canada on October 26, 2001. In other territories outside the United States, the
+                film grossed <b>$12,892,096</b> for a worldwide total of <b>$20,112,339</b>.
+              </p>
+            </div>
+            <!-- end of single item -->
+          </div>
+        </article>
+      </div>
+    </section>
+
+
+
+    <!-- reviews *******************************************************************************************-->
+    <section id="reviews" class="section reviewContainer">
+      <div class="title">
+        <h2>Critic Reviews</h2>
+        <!-- <div class="underline"></div> -->
+      </div>
+      <!-- revirew -->
+      <article class="review">
+        <div class="img-container">
+          <img src="./belikov.jpg" id="person-img" alt="">
+        </div>
+        <h4 id="author">Egor Belikov</h4>
+        <p id="job">Art of the Cinema</p>
+        <p id="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae minus cumque qui? Placeat
+          mollitia eum quaerat iste corporis soluta nemo, voluptatem ipsum ad perspiciatis maxime, reiciendis similique
+          reprehenderit nam aliquam.</p>
+        <!-- prev and next buttons -->
+        <div class="button-container">
+          <button class="prev-btn"><i class="fas fa-chevron-left"></i></button>
+          <button class="next-btn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <!-- random button -->
+        <button class="random-btn scroll-link btn btn-white">surprize me</button>
+      </article>
+    </section>
+
+    <!-- QUESTIONS AND FUN FACTS *******************************************************************************************-->
+    <section id="facts" class="section questions">
+      <div class="titleFacts">
+        <h2>Interesting Facts</h2>
+      </div>
+      <div class="section-center">
+        <!-- one question -->
+        <article class="question">
+          <div class="question-title">
+            <p>Trivia</p>
+            <button type="button" class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <!-- question text -->
+          <div class="question-text">
+            <img src="https://res.cloudinary.com/dyztew1dl/image/upload/v1616329360/Mallholland/naomi_ywhlb2.jpg"
+              alt="">
+            <p> Rebekah Del Rio (the singer at Club Silencio) first met director David Lynch when a talent agent took
+              her, on a whim, to a recording studio where Lynch happened to be and asked her to sing a song for him. She
+              performed an impromptu version of "Llorando" which, also on a whim (and without her knowledge), was being
+              taped by the audio engineer. Years later, Lynch decided to incorporate the song into Mullholland Drive
+              (2001). However, except for a few minor tweaks, this was the exact same recording used in the movie.
+            </p>
+        </article>
+        <!-- end question text -->
+        <!-- one question -->
+        <article class="question">
+          <div class="question-title">
+            <p>Goofs</p>
+            <button type="button" class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <!-- question text -->
+          <div class="question-text">
+            <p>When the detectives talk about finding the gun in the back of the limo, they call the limo a "Caddy" when
+              in fact the limo is actually a late 1980's Lincoln Town Car Stretch Limo. </p>
+          </div>
+        </article>
+        <!-- end question text -->
+        <!-- one question -->
+        <article class="question">
+          <div class="question-title">
+            <p>Crazy Credits</p>
+            <button type="button" class="question-btn">
+              <span class="plus-icon">
+                <i class="far fa-plus-square"></i>
+              </span>
+              <span class="minus-icon">
+                <i class="far fa-minus-square"></i>
+              </span>
+            </button>
+          </div>
+          <!-- question text -->
+          <div class="question-text">
+            <p>Credits have the movie director's name as 'Bob Booker' (not 'Brooker' as we hear). Furthermore, many of
+              the characters' names are simply not mentioned at all during the course of the film (Billy Deznutz, Joe
+              Messing, Bondar, etc.) but their character's names are all listed in the closing credits.</p>
+          </div>
+        </article>
+        <!-- end question text -->
+      </div>
+    </section>
+
+
+    <!-- Images *******************************************************************************************-->
+    <section id="carousel" class="section">
+      <div class="title">
+        <h2>Images</h2>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- footer -->
+  <footer class="section">
+    <p>
+      copyright &copy: vally's cinema club <span id="date"></span>
+      all rights reserved
+    </p>
+  </footer>
+  <!-- back to top button -->
+  <a href="#home" class="scroll-link top-link">
+    <i class="fas fa-arrow-up"></i>
+  </a>
+
+  </div>
+  <!-- javascript -->
+  <script src="app.js"></script>
+
+</body>
+
+</html>
