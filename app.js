@@ -2,6 +2,52 @@
 // pageYOffset is a read - only window property that returns the number of pixels the document has been scrolled vertically.
 // slice extracts a section of a string without modifying original string
 //offsetTop - A Number, representing the top position of the element, in pixels
+// Images *************************************************
+// Images Carousel***************************************
+
+const slides = document.querySelectorAll('.slide');
+const nextBtnImg = document.querySelector('.nextBtnImg')
+const prevBtnImg = document.querySelector('.prevBtnImg')
+
+slides.forEach(function (slide, index) {
+    slide.style.left = `${index * 100}%`;
+});
+
+let counter = 0;
+nextBtnImg.addEventListener('click', function () {
+    counter++;
+    carousel();
+});
+prevBtnImg.addEventListener('click', function () {
+    counter--;
+    carousel();
+});
+
+function carousel() {
+    // loop slides
+    // if (counter === slides.length) {
+    //     counter = 0;
+    // }
+    // if (counter < 0) {
+    //     counter = slides.length - 1;
+    // }
+    if (counter < slides.length - 1) {
+        nextBtnImg.style.display = 'block';
+    } else {
+        nextBtnImg.style.display = 'none';
+    }
+    if (counter > 0) {
+        prevBtnImg.style.display = 'block';
+    } else {
+        prevBtnImg.style.display = 'none';
+    }
+    slides.forEach(function (slide) {
+        slide.style.transform = `translateX(-${counter * 100}%)`
+    });
+}
+prevBtnImg.style.display = "none";
+
+
 
 
 // ********** set date ************
@@ -236,6 +282,8 @@ questions.forEach((question) => {
         question.classList.toggle('show-text');
     });
 });
+
+
 
 
 
