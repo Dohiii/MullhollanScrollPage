@@ -354,10 +354,11 @@ header {
 }
 #reviews,
 #story,
-#images,
+#images
 {
   height: 90vh;
 }
+
 #facts{
   height: 1200px;
 }
@@ -424,7 +425,7 @@ About **************************************************************************
  }
 @media screen and (min-width: 600px) {
   #story {
-    height: 120vh;
+    height: 85vh;
   }
 }
 @media screen and (min-width: 900px) {
