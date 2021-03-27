@@ -369,7 +369,7 @@ footer {
   background: var(--clr-grey-1);
   padding: 5rem 1rem;
   position: relative;
-}
+  }
 footer p {
   color: var(--clr-white);
   text-align: center;
@@ -479,6 +479,7 @@ About **************************************************************************
   border-top-right-radius: var(--radius);
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  border: none;
 }
 .tab-btn:nth-child(1) {
   border-top-left-radius: var(--radius);
@@ -512,9 +513,17 @@ About **************************************************************************
 }
 .tab-btn.active {
   background: var(--clr-white);
+  border: none;
 }
+
+.tab-btn.active:focus{
+  outline: none;
+}
+
+
 .content.active {
   display: block;
+  border: none;
 }
 
 
